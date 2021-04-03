@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
 
 import './FullPost.css';
 
-class FullPost extends Component {
+class FullPost extends React.Component {
     state={
         loadedpost:{},
         
@@ -48,11 +48,13 @@ class FullPost extends Component {
             </div>
 
         );
-       }
+       } 
+
         
-        return post;
+        return  post;
     }
 }
+
 
 export default FullPost;
 
